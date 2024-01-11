@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255),rgb(255, 255, 255));
+    background-attachment: fixed;
+}
+
+.a{
+    width: 100%;
+    text-align: center;
+    margin: 15px auto;
+    color: rgb(255, 0, 234);
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+div#logo{
+    flex: 20%;
+    margin-top: 3%; 
+    margin-left: 10%; 
+}
+
+header h1{
+    color: rgb(255, 0, 234);
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.077);
+}
+
+nav{
+    flex: 22%;
+    margin: 4% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buscador {
+    flex: 20%;
+    margin-top: 3.5%;
+    margin-right: 10%;  
+}
+
+#buscador>form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscador>form input{
+    width: 55%;
+    outline: auto;
+    outline-color:rgb(255, 102, 242);
+    border: rgb(255, 0, 234);
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#caixal{
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+#caixal a{
+    font-size: 17px;
+    text-decoration: underline;
+    font-weight: 900;
+    color: rgb(255, 0, 234);
+}
+
+#buscador>form button, .voltar{
+    width: 40%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 0, 234);
+    cursor: pointer;
+    margin-top: -0.1em;
+    background: rgb(255, 102, 242);
+    padding: 3px;
+
+}
+
+.caixaBtn{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+#buscador>form button:hover{
+    background: transparent;
+    color: rgb(255, 0, 234);
+    font-weight: 400;
+}
+
+
+nav>a{
+    color:rgb(255,0,234);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav>a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+form.principal {
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+form.principal  .campos{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ form.principal input{
+    width: 320px;
+    height: 40px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    outline: none;
+}
+
+form.principal  input:hover{
+    outline: auto;
+    outline-color: rgb(255, 0, 234);
+}
+
+
+
+form.principal button{
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.apres button{
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 102, 242);
+}
+
+main{
+    width: 100%;
+    margin:auto;
+    margin-top: 45px;
+    
+}
+
+section.apres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+
+div#img{
+    flex: 50%;
+    height: 360px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+div#texto{
+    flex: 42%;
+    margin: 2%;
+    height:360px;
+}
+
+#texto h2{
+    color: rgb(255, 0, 234);
+    text-align: center;
+    margin: 40px;
+}
+
+#texto p{
+    margin: 10px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    display: block;
+    margin: auto;
+    color: white;
+    background: rgb(255, 0, 234);
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover{
+    transition: all 0.9s ease-in-out;
+    background-color: #fff;
+    color: rgb(255, 0, 234);
+    border: 1px solid #bcbcbc;
+}
+
+div.texto{
+    margin:30px auto;
+}
+
+div.texto h2,h3,h4,#tituloC h5{
+    color: rgb(255, 0, 234);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.texto p{
+    text-align: justify;
+    margin: 5px;
+}
+
+mark{
+    background-color: rgba(255, 0, 234, 0.414);
+}
+
+#cometarios{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#tituloC{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.caixaCometario{
+    width: 200px;
+    height: 110px;
+    border: 2px solid rgb(255, 102, 242);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:800px) {
+    main{
+        width: 1000px;
+        margin:auto;
+        margin-top: 50px;
+       
+    }
+
+}
+    

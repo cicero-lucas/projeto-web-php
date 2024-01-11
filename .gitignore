@@ -1,0 +1,7 @@
+/vendor
+.htaccess
+composer.json
+composer.lock
+sistema/Helpers
+sistema/suporte/configuracao.php
+rotas.php

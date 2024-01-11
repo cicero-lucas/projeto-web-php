@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marketing digital </title>
+    <link rel="stylesheet" href="templates/assests/css/styles.css">
+
+</head>
+<body> 
+    
+    <header>
+        <div id="logo">
+            <h1>Marketing Digital </h1>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="./loguin">Login</a>
+        </nav>
+
+        <div id="buscador">
+            <!-- pequisando dados com banco de dados -->
+            <form action="./buscar" method="post">
+                <input type="search" placeholder="buscar..." name="ibuscar">
+                <button type="submit">enviar</button>
+            </form>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="apres">
+            <div id="img"></div>
+            <div id="texto">
+                <h2>O Marketing Digital </h2>
+                <p>Se você quer saber mais sobre Marketing Digital, eu recomendo que você comece com o básico.
+                </p>
+
+                <button>Saber mais</button>
+            </div>
+        </section>
+
+        <section class="apres">
+            <div class="texto">
+                <h3>O que é</h3>
+                <p><mark>O Marketing Digital é uma estratégia que tem como objetivo promover produtos ou marcas por meio de mídias digitais. </mark> Ele é uma das principais maneiras que as empresas têm para se comunicar com o público de forma direta, personalizada e no momento certo
+                </p>
+
+                <p>O Marketing Digital é a principal forma de fazer e conceituar marketing nos dias de hoje. O termo é usado para resumir todos os seus esforços de marketing no ambiente online</p>
+                
+                <p>O Marketing Digital é a principal forma de fazer e conceituar marketing nos dias de hoje. O termo é usado para resumir todos os seus esforços de marketing no ambiente online</p>
+
+               
+            </div>
+            <div class="texto">
+                <h4>O que Fazemos</h4>
+
+                <p>O Marketing Digital é uma estratégia que tem como objetivo promover produtos ou marcas por meio de mídias digitais. <mark> Ele é uma das principais maneiras que as empresas têm para se comunicar com o público de forma direta, personalizada e no momento certo.</mark>
+                </p>
+
+                <p>O Marketing Digital é a principal forma de fazer e conceituar marketing nos dias de hoje. O termo é usado para resumir todos os seus esforços de marketing no ambiente online</p>
+
+               
+                
+
+                
+            </div>
+        </section>
+
+        <section id="cometarios">
+            <section id="tituloC">
+                <h5>Cometario</h5>
+            </section>
+
+            <!-- Usando o twig o for e diferete -->
+
+            {% for post in cometario %}
+            <div class="caixaCometario">
+                <!-- posso colocar html junto com twig -->
+                <div id="tituloCometario">
+                    <h6>Cometario</h6>
+                </div>
+                <div id="cometario">
+                    <p class="textoCometario">{{post.cometario}}</p>
+                </div>
+                <div id="usuario">
+                    <p class="textoNome">{{post.nome_usuario}}</p>
+                </div>
+            </div>
+            {%endfor %}
+
+            <!-- explicação  
+                  {% for post in posts %} ele pegar os dados do banco dedada posts e colocar na variavel post
+                    {{post.titulo}} post e um objeto usase o nome do objeto pra chama . no -> pois na é php mais TWIG
+                   {%endfor %} encerra o for 
+
+            
+            -->
+
+        </section>
+    </main>
+
+
+    
+    
+</body>
+</html>
